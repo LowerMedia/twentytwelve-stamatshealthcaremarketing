@@ -46,7 +46,9 @@
 		</hgroup>
 	</header><!-- #masthead -->
 
-	<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+	<?php if(is_front_page()) : ?>
+		<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+	<?php endif; ?>
 
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 		<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>

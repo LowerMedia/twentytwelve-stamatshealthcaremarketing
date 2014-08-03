@@ -88,7 +88,7 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 
 	body .site {margin:0 auto;}
 
-	.site-header {margin-bottom: 300px;}
+	.home .site-header {margin-bottom: 300px;}
 
 	.header-img-wrap {
 		margin: 0 auto;
@@ -110,7 +110,7 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 		margin: 30px auto;
 	}
 
-	.wrapper {margin-top:200px;}
+	.home .wrapper {margin-top:200px;}
 
 	.main-navigation li {margin:0 10px;}
 	.main-navigation li a {border: 1px solid transparent;padding:0 10px;}

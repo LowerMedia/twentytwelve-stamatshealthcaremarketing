@@ -11,7 +11,9 @@
 ?>
 	</div><!-- #main .wrapper -->
 </div><!-- #page -->
-
+	<?php if(!is_front_page()) : ?>
+		<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+	<?php endif; ?>
 <footer id="colophon" role="contentinfo">
 	<div class="site-info">
 		
