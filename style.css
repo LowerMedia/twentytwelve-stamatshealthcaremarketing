@@ -20,63 +20,75 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 -------------------------------------------------------------- */
 
 
-.site-content {
-	float:left;
-}
-
-.secondary {
-	float: left;
-	width: 30%;
-}
-
-.secondary .widget-area {
-	width:50%;
-	margin-right:50%;
-	border-right: 1px solid #ededed;
-}
-
-body {background:white;}
-body .site {
-	box-shadow: none;
-	background: none;
-}
-
-@media screen and (min-width: 600px) {
-.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
-	border:none;
+	.site-content {
+		float:left;
 	}
-}
 
-.site-header {
-	padding:0;
-}
+	.secondary {
+		float: left;
+		width: 30%;
+	}
 
-.site-header .header-wrap {
-	margin:0 auto;
-	padding:0;
-}
+	.secondary .widget-area {
+		width:50%;
+		margin-right:50%;
+		border-right: 1px solid #ededed;
+	}
 
-.site-header .header-image {
-	max-width: 200px;
-	box-shadow: none;
-}
+	body {background:white;}
+	body .site {
+		box-shadow: none;
+		background: none;
+	}
 
-.header-image-wrap, hgroup {display:block;float:left;}
+	@media screen and (min-width: 600px) {
+	.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
+		border:none;
+		}
+	}
 
-hgroup {width:100%;margin:20px 0;}
+	.site-header {
+		padding:0;
+	}
 
-.site-header .site-title, .site-header .site-description, .site-header .site-phonenumber {text-align:right;}
+	.site-header .header-wrap {
+		margin:0 auto;
+		padding:0;
+	}
 
-.site-header .main-navigation .menu-primary-navigation-container ul {float:right;width:auto;}
+	.site-header .header-image {
+		max-width: 200px;
+		box-shadow: none;
+	}
 
-.site-phonenumber {font-size:2.5em;}
+	hgroup {width:100%;margin:0;display:block;float:left;}
+
+	.site-header .site-title, .site-header .site-description, .site-header .site-phonenumber {text-align:right;}
+
+	.site-header .main-navigation .menu-primary-navigation-container ul {float:right;width:auto;}
+
+	.site-phonenumber {font-size:2.5em;}
 
 /*REMOVE BORDERS*/
 
-.site-content article, footer[role="contentinfo"] {border:none;}
+	.site-content article, footer[role="contentinfo"] {border:none;}
 
-/*STAMATS STYLES*/
+/* --------------------------- STAMATS STYLES --------------------------- */
 
-html, body {background-color:lightyellow;}
+	html, body {background-color:lightyellow;}
 
-body .site {margin:0 auto;}
+	body .site {margin:0 auto;}
+
+	.header-img-wrap {
+		margin: 0 auto;
+		max-width: 135px;
+		background:white;
+	}
+
+	.header-img-wrap a {margin:0;}
+	.header-img-wrap img {margin:0;}
+
+
+
+
+
