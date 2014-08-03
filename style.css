@@ -49,7 +49,6 @@ body .site {
 
 .site-header {
 	padding:0;
-	border-bottom: 1px solid #ededed;
 }
 
 .site-header .header-wrap {
@@ -58,14 +57,26 @@ body .site {
 }
 
 .site-header .header-image {
-max-width: 200px;
-box-shadow: none;}
+	max-width: 200px;
+	box-shadow: none;
+}
 
 .header-image-wrap, hgroup {display:block;float:left;}
 
 hgroup {width:100%;margin:20px 0;}
+
 .site-header .site-title, .site-header .site-description, .site-header .site-phonenumber {text-align:right;}
 
 .site-header .main-navigation .menu-primary-navigation-container ul {float:right;width:auto;}
 
 .site-phonenumber {font-size:2.5em;}
+
+/*REMOVE BORDERS*/
+
+.site-content article, footer[role="contentinfo"] {border:none;}
+
+/*STAMATS STYLES*/
+
+html, body {background-color:lightyellow;}
+
+body .site {margin:0 auto;}
