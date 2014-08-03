@@ -73,11 +73,22 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 
 	.site-content article, footer[role="contentinfo"] {border:none;}
 
+/*HIDE ELEMENT*/
+
+	.hide-me,
+	.entry-title {
+	    position: absolute;
+	    top: -9999px;
+	    left: -9999px;
+	}
+
 /* --------------------------- STAMATS STYLES --------------------------- */
 
 	html, body {background-color:lightyellow;}
 
 	body .site {margin:0 auto;}
+
+	.site-header {margin-bottom: 300px;}
 
 	.header-img-wrap {
 		margin: 0 auto;
@@ -88,7 +99,25 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 	.header-img-wrap a {margin:0;}
 	.header-img-wrap img {margin:0;}
 
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 3.5rem;
+	}
 
+	.main-navigation {
+		width: 50%;
+		margin: 30px auto;
+	}
 
+	.wrapper {margin-top:200px;}
 
+	.main-navigation li {margin:0 10px;}
+	.main-navigation li a {border: 1px solid transparent;padding:0 10px;}
+	.main-navigation li a:hover {border: 1px solid whitesmoke;}
 
+	.hentry {
+		text-align: center;
+		width: 50%;
+		margin: auto;
+	}
