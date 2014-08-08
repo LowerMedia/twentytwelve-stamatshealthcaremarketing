@@ -19,30 +19,15 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
-
-	/*.site-content {
-		float:left;
-	}*/
-
-	/*.secondary {
-		float: left;
-		width: 30%;
-	}
-
-	.secondary .widget-area {
-		width:50%;
-		margin-right:50%;
-		border-right: 1px solid #ededed;
-	}*/
-
 	body .site {
 		box-shadow: none;
 		background: none;
 	}
 
 	@media screen and (min-width: 600px) {
-	.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
-		border:none;
+		.main-navigation ul.nav-menu, 
+		.main-navigation div.nav-menu > ul {
+			border:none;
 		}
 	}
 
@@ -50,27 +35,12 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 		padding:0;
 	}
 
-	/*.site-header .header-wrap {
-		margin:0 auto;
-		padding:0;
-	}*/
-
 	.site-header .header-image {
-		/*max-width: 200px;*/
 		box-shadow: none;
 	}
 
 	hgroup {width:100%;float:left;}
 
-/*	.site-header .site-title, 
-	.site-header .site-description, 
-	.site-header .site-phonenumber {text-align:right;}*/
-
-	/*.site-header .main-navigation .menu-primary-navigation-container ul {
-		float:right;
-		width:auto;
-	}
-*/
 	.site-phonenumber {font-size:2.5em;}
 
 /*REMOVE BORDERS*/
@@ -85,16 +55,6 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 	    top: -9999px;
 	    left: -9999px;
 	}
-
-/* --------------------------- STAMATS STYLES --------------------------- */
-
-	/*html, body {background-color:lightyellow;}
-
-	html, body {
-		 background-image:url('/wp-content/themes/twentytwelve-stamatshealthcaremarketing/stamats-health-care-marketing.jpg');
-		background-size:contain;
-		background-repeat: no-repeat; 
-	}*/
 
 	body .site {margin:0 auto;}
 
