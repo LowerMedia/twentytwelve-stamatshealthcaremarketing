@@ -45,7 +45,9 @@
 // }
 // add_action( 'init', 'products_custom_init' );
 
-
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 
 /*
 #
@@ -54,11 +56,7 @@
 */
 
 function lowermedia_scripts() {
-    // wp_enqueue_script(
-    //     'continent-map',
-    //     get_stylesheet_directory_uri() . '/continentmap.js',
-    //     array( 'jquery' )
-    // );
+    wp_enqueue_script( 'background-image-responsive', get_stylesheet_directory_uri() . 'background-image-responsive.js', array(), '1.0.0', true );
     //     wp_enqueue_script(
     //     'map-data',
     //     get_stylesheet_directory_uri() . '/mapdata.js',

@@ -84,7 +84,13 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 
 /* --------------------------- STAMATS STYLES --------------------------- */
 
-	html, body {background-color:lightyellow;}
+	html, body {/*background-color:lightyellow;*/}
+
+	html, body {
+		/* background-image:url('/wp-content/themes/twentytwelve-stamatshealthcaremarketing/stamats-health-care-marketing.jpg');
+		background-size:contain;
+		background-repeat: no-repeat; */
+	}
 
 	body .site {margin:0 auto;}
 
