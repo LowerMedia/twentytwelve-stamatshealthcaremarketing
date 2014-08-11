@@ -19,17 +19,46 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+/* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
+
 	body .site {
 		box-shadow: none;
 		background: none;
+		margin:0 auto;
 	}
 
-	@media screen and (min-width: 600px) {
-		.main-navigation ul.nav-menu, 
-		.main-navigation div.nav-menu > ul {
-			border:none;
-		}
+	.home .wrapper {margin-top:200px;}
+
+	/*REMOVE BORDERS*/
+	.site-content article, 
+	footer[role="contentinfo"] {border:none;}
+
+	/*HIDE ELEMENT*/
+	.hide-me,
+	.entry-title {
+	    position: absolute;
+	    top: -9999px;
+	    left: -9999px;
 	}
+
+	.site-phonenumber {font-size:2.5em;}
+
+/* -- TEXT STYLES -- */
+
+	p,
+	h1, h2, h3, h4, h5,  
+	.main-navigation li a {
+		font-weight:600;
+		color:white;
+	}
+
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 3.5rem;
+	}
+
+/* -- HEADER -- */
 
 	.site-header {
 		padding:0;
@@ -39,24 +68,10 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 		box-shadow: none;
 	}
 
-	hgroup {width:100%;float:left;}
-
-	.site-phonenumber {font-size:2.5em;}
-
-/*REMOVE BORDERS*/
-
-	.site-content article, footer[role="contentinfo"] {border:none;}
-
-/*HIDE ELEMENT*/
-
-	.hide-me,
-	.entry-title {
-	    position: absolute;
-	    top: -9999px;
-	    left: -9999px;
+	hgroup {
+		width:100%;
+		float:left;
 	}
-
-	body .site {margin:0 auto;}
 
 	.home .site-header {margin-bottom: 300px;}
 
@@ -67,12 +82,16 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 	}
 
 	.header-img-wrap a {margin:0;}
+
 	.header-img-wrap img {margin:0;}
 
-	h2 {
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 3.5rem;
+/* -- NAVIGATION -- */
+
+	@media screen and (min-width: 600px) {
+		.main-navigation ul.nav-menu, 
+		.main-navigation div.nav-menu > ul {
+			border:none;
+		}
 	}
 
 	.main-navigation {
@@ -80,14 +99,23 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 		margin: 30px auto;
 	}
 
-	.home .wrapper {margin-top:200px;}
-
 	.main-navigation li {margin:0 10px;}
-	.main-navigation li a {border: 1px solid transparent;padding:0 10px;}
-	.main-navigation li a:hover {border: 1px solid whitesmoke;}
 
-	.hentry {
+	.main-navigation li a {border: 1px solid transparent;padding:0 10px;}
+
+	.main-navigation li a:hover {
+		border: 1px solid whitesmoke;
+		color:white;
+	}
+
+/* -- CONTENT -- */
+
+	.site-content .hentry {
 		text-align: center;
 		width: 50%;
-		margin: auto;
+		margin: 0 auto;
 	}
+
+/* -- FOOTER -- */
+
+	footer[role="contentinfo"] {margin:0 auto;}
