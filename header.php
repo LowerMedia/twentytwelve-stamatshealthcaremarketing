@@ -36,11 +36,31 @@
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
 			<div class='header-img-wrap'>
-				<?php if ( get_header_image() ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-				<?php elseif ( !get_header_image() ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/stamats-white-header.png" class="header-image" width="" height="" alt="" /></a>
-				<?php endif; ?>
+				
+
+
+		<?php /*ABOUT PAGE*/ 
+		 if( is_page( 35 ) ) : ?>
+			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/cropped-squarelogo-gold.png');?>" id="header-image" class="header-image" />
+		<?php endif; ?>
+		<?php /*ABOUT PAGE*/ 
+		 if( is_page( 36 ) ) : ?>
+			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-salmon.png');?>" id="header-image" class="header-image" />
+		<?php endif; ?>
+		<?php /*ABOUT PAGE*/ 
+		 if( is_page( 37 ) ) : ?>
+			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-pink.png');?>" id="header-image" class="header-image" />
+		<?php endif; ?>
+		<?php /*ABOUT PAGE*/ 
+		 if( is_page( 38 ) ) : ?>
+			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-peach.png');?>" id="header-image" class="header-image" />
+		<?php endif; ?>
+		<?php /*ABOUT PAGE*/ 
+		 if( is_home() ) : ?>
+			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-blue.png');?>" id="header-image" class="header-image" />
+		<?php endif; ?>
+
+
 			</div>
 			<h1 class="site-title hide-me"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</hgroup>
