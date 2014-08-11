@@ -38,27 +38,31 @@
 			<div class='header-img-wrap'>
 				
 
-
-		<?php /*ABOUT PAGE*/ 
-		 if( is_page( 35 ) ) : ?>
+		<?php /* -- HOME PAGE -- */ 
+		 if( is_front_page() ) : ?>
 			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/cropped-squarelogo-gold.png');?>" id="header-image" class="header-image" />
+		<?php endif; ?>		
+		<?php /* -- ABOUT PAGE -- */ 
+		 if( is_page( 35 ) ) : ?>
+			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-maroon.png');?>" id="header-image" class="header-image" />
 		<?php endif; ?>
-		<?php /*ABOUT PAGE*/ 
+		<?php /* -- CIENTS PAGE -- */ 
 		 if( is_page( 36 ) ) : ?>
 			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-salmon.png');?>" id="header-image" class="header-image" />
 		<?php endif; ?>
-		<?php /*ABOUT PAGE*/ 
+		<?php /* -- SERVICES PAGE -- */ 
 		 if( is_page( 37 ) ) : ?>
 			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-pink.png');?>" id="header-image" class="header-image" />
 		<?php endif; ?>
-		<?php /*ABOUT PAGE*/ 
+		<?php /* -- PARTNERS PAGE -- */ 
 		 if( is_page( 38 ) ) : ?>
 			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-peach.png');?>" id="header-image" class="header-image" />
 		<?php endif; ?>
-		<?php /*ABOUT PAGE*/ 
+		<?php /* -- BLOG PAGE -- */ 
 		 if( is_home() ) : ?>
 			<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-blue.png');?>" id="header-image" class="header-image" />
 		<?php endif; ?>
+		
 
 
 			</div>
