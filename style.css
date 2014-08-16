@@ -27,7 +27,7 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 		margin:0 auto;
 	}
 
-	.home .wrapper {margin-top:200px;}
+	.home .wrapper {margin-top:20.8vh;}
 
 	/*REMOVE BORDERS*/
 	.site-content article, 
@@ -97,7 +97,7 @@ img#fsb_image {
 		float:left;
 	}
 
-	.home .site-header {margin-bottom: 300px;}
+	.home .site-header {margin-bottom: 25.9vh;}
 
 	.header-img-wrap {
 		margin: 0 auto;
