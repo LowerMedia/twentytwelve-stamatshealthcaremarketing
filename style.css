@@ -63,6 +63,7 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 img#fsb_image {
 	/* Set rules to fill background */
 	min-height: 100%;
+	max-height:100vh;
 	min-width: 1024px;
 
 	/* Set up proportionate scaling */
