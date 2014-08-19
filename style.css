@@ -10,16 +10,18 @@
  Text Domain:  twenty-twelve-child
 */
 
-/*
-For older themes, and themes that do not use wp_enqueue_style() to enqueue their stylesheet, use the following line where twentyfourteen is the name of the directory where the theme resides:
-
-@import url("../twentytwelve/style.css");
-*/
-
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+/* -- HIDE SCROLLBAR -- */
+
+	::-webkit-scrollbar  { 
+	    display: none;
+	}
+
+
 /* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
+
 
 	body .site {
 		box-shadow: none;
@@ -27,11 +29,15 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 		margin:0 auto;
 	}
 
-	.home .wrapper {margin-top:20.8vh;}
+	.home .wrapper {
+		margin-top:20.8vh;
+	}
 
 	/*REMOVE BORDERS*/
 	.site-content article, 
-	footer[role="contentinfo"] {border:none;}
+	footer[role="contentinfo"] {
+		border:none;
+	}
 
 	/*HIDE ELEMENT*/
 	.hide-me,
@@ -41,13 +47,18 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 	    left: -9999px;
 	}
 
-	.site-phonenumber {font-size:2.5em;}
+	.site-phonenumber {
+		font-size:2.5em;
+	}
+
 
 /* -- TEXT STYLES -- */
 
+
 	p,
 	h1, h2, h3, h4, h5,  
-	.main-navigation li a {
+	.main-navigation li a,
+	ul, li {
 		font-weight:600;
 		color:white;
 	}
@@ -57,33 +68,43 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 		text-transform: uppercase;
 		font-size: 3.5rem;
 	}
+	/* Color Visited Links From Grey To WhiteSmoke */
+	.entry-content a:visited, 
+	.comment-content a:visited {
+		color:whitesmoke;
+	}
+
 
 /* -- BACKGROUND IMAGE -- */
 
-img#fsb_image {
-	/* Set rules to fill background */
-	min-height: 100%;
-	max-height:100vh;
-	min-width: 1024px;
 
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
-
-	/* Set up positioning */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -9999;
-}
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
 	img#fsb_image {
-		left: 50%;
-		margin-left: -512px;   /* 50% */
+		/* Set rules to fill background */
+		min-height: 100%;
+		max-height:100vh;
+		min-width: 1024px;
+
+		/* Set up proportionate scaling */
+		width: 100%;
+		height: auto;
+
+		/* Set up positioning */
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -9999;
 	}
-}
+
+	@media screen and (max-width: 1024px) { /* Specific to this particular image */
+		img#fsb_image {
+			left: 50%;
+			margin-left: -512px;   /* 50% */
+		}
+	}
+
 
 /* -- HEADER -- */
+
 
 	.site-header {
 		padding:0;
@@ -106,11 +127,17 @@ img#fsb_image {
 		background:white;
 	}
 
-	.header-img-wrap a {margin:0;}
+	.header-img-wrap a {
+		margin:0;
+	}
 
-	.header-img-wrap img {margin:0;}
+	.header-img-wrap img {
+		margin:0;
+	}
+
 
 /* -- NAVIGATION -- */
+
 
 	@media screen and (min-width: 600px) {
 		.main-navigation ul.nav-menu, 
@@ -124,9 +151,18 @@ img#fsb_image {
 		margin: 20vh auto 0 auto;
 	}
 
-	.main-navigation li {margin:0 10px;}
+	.main-navigation ul.nav-menu {
+		text-align: center;
+	}
 
-	.main-navigation li a {border: 1px solid transparent;padding:0 10px;}
+	.main-navigation li {
+		margin:0 10px;
+	}
+
+	.main-navigation li a {
+		border: 1px solid transparent;
+		padding:0 10px;
+	}
 
 	.main-navigation li a:hover,
 	.main-navigation .current-menu-item a {
@@ -134,14 +170,19 @@ img#fsb_image {
 		color:white;
 	}
 
+
 /* -- CONTENT -- */
 
+	
 	.site-content .hentry {
 		text-align: center;
 		width: 50%;
 		margin: 0 auto;
 	}
 
+
 /* -- FOOTER -- */
 
+
 	footer[role="contentinfo"] {margin:0 auto;}
+

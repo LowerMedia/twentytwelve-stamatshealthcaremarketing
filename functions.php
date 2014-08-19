@@ -126,10 +126,10 @@ function lowermedia_enqueue_parent_style() {
 }
 add_action( 'wp_enqueue_scripts', 'lowermedia_enqueue_parent_style' );
 
-function lowermedia_enqueue_child_style() {
-    wp_enqueue_style( 'child-style', get_stylesheet_uri() );
-}
-add_action( 'wp_enqueue_scripts', 'lowermedia_enqueue_child_style', 11 );
+// function lowermedia_enqueue_child_style() {
+//     wp_enqueue_style( 'child-style', get_stylesheet_uri() );
+// }
+//add_action( 'wp_enqueue_scripts', 'lowermedia_enqueue_child_style', 11 );
 
 
 
