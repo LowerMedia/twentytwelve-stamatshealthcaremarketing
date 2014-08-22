@@ -21,12 +21,23 @@
 
 
 /* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
-
-
+	
+	body {background-color: black;}
+	
 	body .site {
-		margin:0 auto;
-		background: none;
-		box-shadow: none;
+			margin:0 auto;
+			background: none;
+			box-shadow: none;
+		}
+	
+	body.home .site {
+		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-gold.jpg');
+		/*background-size: 110% 110vh;*/
+		background-repeat: no-repeat;
+		background-size: auto 100vh;
+		background-position: 70% 0;
+		overflow: scroll;
+		width: 960px;
 	}
 
 	.home .wrapper {

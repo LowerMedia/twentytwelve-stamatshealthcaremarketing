@@ -72,7 +72,7 @@ function lowermedia_fsb_display_image() {
         
         /*HOME PAGE*/
         if( is_front_page() ) {
-            echo '<img src="' . esc_url( $image ) . '" id="fsb_image"/>';
+            //echo '<img src="' . esc_url( $image ) . '" id="fsb_image"/>';
         }
 
         /*ABOUT PAGE*/
