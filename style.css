@@ -22,12 +22,13 @@
 
 /* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
 	
-	body {background-color: black;}
+	.home {background-color: #B7A84D;}
 	
 	body .site {
 			margin:0 auto;
 			background: none;
 			box-shadow: none;
+			height:100vh;
 		}
 	
 	body.home .site {
