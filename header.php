@@ -40,27 +40,27 @@
 				<a href='/'>
 					<?php /* -- HOME PAGE -- */ 
 					 if( is_front_page() ) : ?>
-						<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/cropped-squarelogo-gold.png');?>" id="header-image" class="header-image" />
-					<?php endif; ?>		
+					 	<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-gold.png" id="header-image" class="header-image" />
+ 					<?php endif; ?>		
 					<?php /* -- ABOUT PAGE -- */ 
 					 if( is_page( 35 ) ) : ?>
-						<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-maroon.png');?>" id="header-image" class="header-image" />
+					 <img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-maroon.png" id="header-image" class="header-image" />
 					<?php endif; ?>
 					<?php /* -- CIENTS PAGE -- */ 
 					 if( is_page( 36 ) ) : ?>
-						<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-salmon.png');?>" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-salmon.png" id="header-image" class="header-image" />
 					<?php endif; ?>
 					<?php /* -- SERVICES PAGE -- */ 
 					 if( is_page( 37 ) ) : ?>
-						<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-pink.png');?>" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-ping.png" id="header-image" class="header-image" />
 					<?php endif; ?>
 					<?php /* -- PARTNERS PAGE -- */ 
 					 if( is_page( 38 ) ) : ?>
-						<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-peach.png');?>" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-peach.png" id="header-image" class="header-image" />
 					<?php endif; ?>
 					<?php /* -- BLOG PAGE -- */ 
 					 if( is_home() ) : ?>
-						<img src="<?php echo esc_url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/squarelogo-blue.png');?>" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-blue.png" id="header-image" class="header-image" />
 					<?php endif; ?>
 				</a>
 		
