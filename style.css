@@ -174,22 +174,23 @@
 
 	.header-img-wrap {
 		margin: 0 auto;
+		max-width: 135px;
 		width: 135px;
 		height: 135px;
-		max-width: 135px;
 		background:white;
 		text-align: center;
 	}
 
 	.header-img-wrap a {
+		display:block;
 		margin:0;
 		width: 135px;
 		height: 135px;
-		display:block;
 	}
 
 	.header-img-wrap img {
-		margin-top:90px;
+		margin:0;
+		border-radius:0;
 	}
 
 /* -- NAVIGATION -- */
