@@ -56,7 +56,7 @@ function lowermedia_sfsb_load_admin_scripts( $hook ) {
         return;
 
     wp_enqueue_media();
-    wp_enqueue_script( 'fsb-scripts', get_template_directory_uri(). 'fsb-scripts.js', array( 'jquery', 'media-upload', 'thickbox' ), filemtime( get_template_directory_uri() . 'fsb-scripts.js' ) );
+    //wp_enqueue_script( 'fsb-scripts', get_template_directory_uri(). 'fsb-scripts.js', array( 'jquery', 'media-upload', 'thickbox' ), filemtime( get_template_directory_uri() . 'fsb-scripts.js' ) );
 }
 add_action( 'admin_enqueue_scripts', 'lowermedia_sfsb_load_admin_scripts' );
 
@@ -77,27 +77,27 @@ function lowermedia_fsb_display_image() {
 
         /*ABOUT PAGE*/
         if( is_page( 35 ) ) {
-            echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-maroon.jpg" ) . '" id="fsb_image"/>';
+            //echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-maroon.jpg" ) . '" id="fsb_image"/>';
         }
 
         /*CLIENTS PAGE*/
         if( is_page( 36 ) ) {
-            echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-salmon.jpg" ) . '" id="fsb_image"/>';
+            //echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-salmon.jpg" ) . '" id="fsb_image"/>';
         }
 
         /*SERVICES PAGE*/
         if( is_page( 37 ) ) {
-            echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-pink.jpg" ) . '" id="fsb_image"/>';
+            //echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-pink.jpg" ) . '" id="fsb_image"/>';
         }
 
         /*PARTNERS PAGE*/
         if( is_page( 38 ) ) {
-            echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-peach.jpg" ) . '" id="fsb_image"/>';
+            //echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-peach.jpg" ) . '" id="fsb_image"/>';
         }
 
         /*BLOG PAGE*/
         if( is_home() ) {
-            echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-blue.jpg" ) . '" id="fsb_image"/>';
+            //echo '<img src="' . esc_url( "http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-blue.jpg" ) . '" id="fsb_image"/>';
         }
 
     }
@@ -111,7 +111,7 @@ add_action( 'wp_footer', 'lowermedia_fsb_display_image' );
 */
 
 function lowermedia_scripts() {
-    wp_enqueue_script( 'background-image-responsive', get_stylesheet_directory_uri() . 'background-image-responsive.js', array(), '1.0.0', true );
+    //wp_enqueue_script( 'background-image-responsive', get_stylesheet_directory_uri() . 'background-image-responsive.js', array(), '1.0.0', true );
     //     wp_enqueue_script(
     //     'map-data',
     //     get_stylesheet_directory_uri() . '/mapdata.js',
