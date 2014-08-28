@@ -16,29 +16,12 @@
 /* -- BACKGROUND IMAGE -- */
 
 
-	.home {
-		background-color: #B7A84D;/*gold*/
-	}
-
-	.page-id-35 {
-		background-color: #712040;/*maroon*/
-	}
-
-	.page-id-36 {
-		background-color: #C87476;/*peach*/
-	}
-
-	.page-id-37 {
-		background-color: #AE554F;/**/
-	}
-
-	.page-id-38 {
-		background-color: #D2A472;/*peach*/
-	}
-
-	.blog {
-		background-color: #00739F;/*peach*/
-	}
+	.home {background-color: #B7A84D;/*gold*/}
+	.page-id-35 {background-color: #712040;/*maroon*/}
+	.page-id-36 {background-color: #C87476;/*pink*/}
+	.page-id-37 {background-color: #AE554F;/*red*/}
+	.page-id-38 {background-color: #D2A472;/*salmon*/}
+	.blog {background-color: #00739F;/*blue*/}
 
 	.site {
 		background-attachment: fixed;
@@ -53,8 +36,6 @@
 		background-repeat:no-repeat;
 		background-position:center center;
 	}
-
-
 
 	.page-id-35 .site {
 		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-maroon.jpg'); 
@@ -75,15 +56,23 @@
 		
 	.blog .site {
 		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-blue.jpg'); 
-		height:100%;
+		height:100vh;
 	}
 		
 
 	/*APPLIES WHEN BROWSER IS TALLER THAN VALUE*/
+	@media screen and (min-height: 900px) {
+		.home .site {height:100vh;}
+	}
+
 	@media screen and (max-height: 766.1875px) {
-		.site {
-			height: 100% !important;
-			/*background-image:none;*/
+		.site,
+		.page .site {
+			height: 100%;
+		}
+
+		.blog .site {
+			height: 100vh;
 		}
 	}
 
@@ -96,15 +85,11 @@
 		.page-id-35 .site,
 		.page-id-36 .site,
 		.page-id-37 .site,
-		.page-id-38 .site {
+		.page-id-38 .site,
+		.blog .site {
 			height:100%;
 		}
 	}
-	
-	
-	
-
-
 
 /* -- HIDE SCROLLBAR -- */
 
@@ -118,8 +103,6 @@
 	body .site {
 		margin:0 auto;
 		box-shadow: none;
-		/*height:100vh;
-		background: none;*/
 	}
 
 	.home .wrapper {
@@ -189,14 +172,11 @@
 		width:100%;
 	}
 
+	.home .site-header {margin-bottom: 25.9vh;}
+	
 	@media screen and (max-width: 600px) {
 		hgroup {margin-bottom:30px;}
 		.home .site-description {margin-bottom:30px;}
-	}
-
-	.home .site-header {margin-bottom: 25.9vh;}
-
-	@media screen and (max-width: 600px) {
 		.home .site-header {margin-bottom: 0;}
 	}
 
@@ -214,9 +194,7 @@
 		margin:0;
 	}
 
-
 /* -- NAVIGATION -- */
-
 
 	@media screen and (min-width: 600px) {
 		.main-navigation ul.nav-menu, 
@@ -226,12 +204,13 @@
 	}
 
 	.main-navigation {
-		margin: 20vh auto 0 auto;
+		margin: 0 auto 0 auto;
 		width: 50%;
 	}
 
 	.main-navigation ul.nav-menu {
 		text-align: center;
+		margin-top:5vh;
 	}
 
 	.main-navigation li {
@@ -256,9 +235,7 @@
 		.main-navigation li a {padding:20px 20px;margin: 10px 0;text-decoration: none;}
 	}
 
-
 /* -- CONTENT -- */
-
 	
 	.site-content .hentry,
 	.site-content .not-found {
@@ -275,6 +252,4 @@
 
 /* -- FOOTER -- */
 
-
 	footer[role="contentinfo"] {margin:0 auto;text-align:center;}
-
