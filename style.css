@@ -15,7 +15,6 @@
 
 /* -- BACKGROUND IMAGE -- */
 
-
 	.home {background-color: #B7A84D;/*gold*/}
 	.page-id-35 {background-color: #712040;/*maroon*/}
 	.page-id-36 {background-color: #C87476;/*pink*/}
@@ -27,7 +26,7 @@
 		background-attachment: fixed;
 		background-clip: border-box;
 		background-color: transparent;
-		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-gold.jpg');
+		background-image: url('img/background-gold.jpg');
 		background-origin: padding-box;
 		-webkit-background-size: contain;
 		-moz-background-size: contain;
@@ -38,24 +37,24 @@
 	}
 
 	.page-id-35 .site {
-		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-maroon.jpg'); 
+		background-image: url('img/background-maroon.jpg'); 
 		height:100vh;
 	}
 
 	.page-id-36 .site {
-		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-salmon.jpg'); 
+		background-image: url('img/background-salmon.jpg'); 
 	}
 		
 	.page-id-37 .site {
-		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-pink.jpg'); 
+		background-image: url('img/background-pink.jpg'); 
 	}
 		
 	.page-id-38 .site {
-		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-peach.jpg'); 
+		background-image: url('img/background-peach.jpg'); 
 	}
 		
 	.blog .site {
-		background-image: url('http://stamatshealthcaremarketing.petelower.com/wp-content/uploads/2014/08/background-blue.jpg'); 
+		background-image: url('img/background-blue.jpg'); 
 		height:100vh;
 	}
 		
