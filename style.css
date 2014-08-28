@@ -13,7 +13,7 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
-/* -- BACKGROUND IMAGE -- */
+/* -- BACKGROUND IMAGE STYLES -- */
 
 	.home {background-color: #B7A84D;/*gold*/}
 	.page-id-35 {background-color: #712040;/*maroon*/}
@@ -23,22 +23,22 @@
 	.blog {background-color: #00739F;/*blue*/}
 
 	.site {
-		background-attachment: fixed;
-		background-clip: border-box;
 		background-color: transparent;
 		background-image: url('img/background-gold.jpg');
+		background-attachment: fixed;
+		background-position:center center;
+		background-clip: border-box;
 		background-origin: padding-box;
+		background-size: auto 100vh;
+		background-repeat:no-repeat;
 		-webkit-background-size: contain;
 		-moz-background-size: contain;
 		-o-background-size: contain;
-		background-size: auto 100vh;
-		background-repeat:no-repeat;
-		background-position:center center;
 	}
 
-	.page-id-35 .site {
-		background-image: url('img/background-maroon.jpg'); 
+	.page-id-35 .site { 
 		height:100vh;
+		background-image: url('img/background-maroon.jpg');
 	}
 
 	.page-id-36 .site {
@@ -53,9 +53,9 @@
 		background-image: url('img/background-peach.jpg'); 
 	}
 		
-	.blog .site {
-		background-image: url('img/background-blue.jpg'); 
+	.blog .site { 
 		height:100vh;
+		background-image: url('img/background-blue.jpg');
 	}
 		
 
@@ -77,8 +77,8 @@
 
 	@media screen and (max-width: 600px) {
 		.site {
-			background-position: 80% center;
 			height:120vh;
+			background-position: 80% center;
 		}
 
 		.page-id-35 .site,
@@ -89,13 +89,6 @@
 			height:100%;
 		}
 	}
-
-/* -- HIDE SCROLLBAR -- */
-
-	/*::-webkit-scrollbar  { 
-	    display: none;
-	}
-*/
 
 /* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
 
@@ -208,8 +201,8 @@
 	}
 
 	.main-navigation ul.nav-menu {
-		text-align: center;
 		margin-top:5vh;
+		text-align: center;
 	}
 
 	.main-navigation li {
@@ -230,8 +223,8 @@
 	@media screen and (max-width: 600px) {
 		.main-navigation {margin-top: 0;}
 		.entry-header {display:none;}
-		.main-navigation li {padding:20px 20px;margin: 10px 0;}
-		.main-navigation li a {padding:20px 20px;margin: 10px 0;text-decoration: none;}
+		.main-navigation li {margin: 10px 0;padding:20px 20px;}
+		.main-navigation li a {margin: 10px 0;padding:20px 20px;text-decoration: none;}
 	}
 
 /* -- CONTENT -- */
