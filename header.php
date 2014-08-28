@@ -37,30 +37,30 @@
 		<hgroup>
 			<div class='header-img-wrap'>
 				
-				<a href='/'>
+				<a href='/' title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing'>
 					<?php /* -- HOME PAGE -- */ 
 					 if( is_front_page() ) : ?>
-					 	<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-gold.png" id="header-image" class="header-image" />
+					 	<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-gold.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
  					<?php endif; ?>		
 					<?php /* -- ABOUT PAGE -- */ 
 					 if( is_page( 35 ) ) : ?>
-					 <img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-maroon.png" id="header-image" class="header-image" />
+					 <img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-maroon.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
 					<?php endif; ?>
 					<?php /* -- CIENTS PAGE -- */ 
 					 if( is_page( 36 ) ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-salmon.png" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-salmon.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
 					<?php endif; ?>
 					<?php /* -- SERVICES PAGE -- */ 
 					 if( is_page( 37 ) ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-ping.png" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-ping.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
 					<?php endif; ?>
 					<?php /* -- PARTNERS PAGE -- */ 
 					 if( is_page( 38 ) ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-peach.png" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-peach.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
 					<?php endif; ?>
 					<?php /* -- BLOG PAGE -- */ 
 					 if( is_home() ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-blue.png" id="header-image" class="header-image" />
+						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-blue.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
 					<?php endif; ?>
 				</a>
 		
