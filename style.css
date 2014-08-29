@@ -31,7 +31,7 @@
 		background-origin: padding-box;
 		background-size: auto 100vh;
 		background-repeat:no-repeat;
-		-webkit-background-size: contain;
+		/* -webkit-background-size: contain; */
 		-moz-background-size: contain;
 		-o-background-size: contain;
 	}
@@ -92,9 +92,15 @@
 
 /* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
 
+	
+
 	body .site {
 		margin:0 auto;
 		box-shadow: none;
+	}
+
+	@media screen and (min-height: 769px) {
+	.home .site {height:100vh;}
 	}
 
 	.home .wrapper {
