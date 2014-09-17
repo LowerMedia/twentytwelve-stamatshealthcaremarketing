@@ -256,3 +256,30 @@
 /* -- FOOTER -- */
 
 	footer[role="contentinfo"] {margin:0 auto;text-align:center;}
+
+	.menu-social-media-container .menu-item {
+		height: 64px;
+		width: 64px;
+		display: inline-block;
+		color: transparent;
+		background-size: 64px 64px;
+		background-position: center center;
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		margin:0 1%;
+	}
+
+	.menu-social-media-container .menu-item a,
+	.menu-social-media-container .menu-item a:hover {color:transparent;}
+
+	.menu-item-99 {
+		background-image:url('img/square-facebook-128.png');
+	}
+
+	.menu-item-100 {
+		background-image:url('img/square-twitter-128.png');
+	}
+
+	.menu-item-101 {
+		background-image:url('img/square-linkedin-128.png');
+	}
