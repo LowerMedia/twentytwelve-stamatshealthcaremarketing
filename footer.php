@@ -16,6 +16,7 @@
 		<footer id="colophon" role="contentinfo">
 			<div class="site-info">
 				<h4>Stamats Health Care Marketing &copy;<?php echo date("Y"); ?></h4>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-social-menu' ) ); ?>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #main .wrapper -->
