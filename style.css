@@ -15,12 +15,12 @@
 
 /* -- BACKGROUND IMAGE STYLES -- */
 
-	.home {background-color: #B7A84D;/*gold*/}
-	.page-id-35 {background-color: #712040;/*maroon*/}
-	.page-id-36 {background-color: #C87476;/*pink*/}
-	.page-id-37 {background-color: #AE554F;/*red*/}
-	.page-id-38 {background-color: #D2A472;/*salmon*/}
-	.blog {background-color: #00739F;/*blue*/}
+	body {background-color: #B7A84D;/*gold*/}
+	/*.page-id-35 {background-color: #712040;maroon}
+	.page-id-36 {background-color: #C87476;pink}
+	.page-id-37 {background-color: #AE554F;red}
+	.page-id-38 {background-color: #D2A472;salmon}
+	.blog {background-color: #00739F;blue}*/
 
 	.site {
 		background-color: transparent;
@@ -36,7 +36,7 @@
 		-o-background-size: contain;
 	}
 
-	.page-id-35 .site { 
+	/*.page-id-35 .site { 
 		height:100vh;
 		background-image: url('img/background-maroon.jpg');
 	}
@@ -56,7 +56,7 @@
 	.blog .site { 
 		height:100vh;
 		background-image: url('img/background-blue.jpg');
-	}
+	}*/
 		
 
 	/*APPLIES WHEN BROWSER IS TALLER THAN VALUE*/
@@ -217,7 +217,7 @@
 	}
 
 	.main-navigation li {
-		margin:0 10px;
+		margin:0 8px;
 	}
 
 	.main-navigation li a {
