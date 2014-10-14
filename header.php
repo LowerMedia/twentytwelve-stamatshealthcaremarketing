@@ -36,36 +36,23 @@
 </head>
 
 <body <?php body_class(); ?>>
+<script type="text/javascript">
+document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
+    if(document.readyState=='loaded' || document.readyState=='complete') {
+    	//var theCSSprop = window.getComputedStyle(document.getElementById("bkImgHold"),':after').getPropertyValue("background-image");
+        //alert('Page is fully loaded.'+theCSSprop);
+        //document.getElementById("page").setProperty("background-color", 'blue')
+        //jQuery('.site::after').css('background-image', 'url(http://stamatshealthcaremarketing.petelower.com/wp-content/themes/twentytwelve-stamatshealthcaremarketing/img/background-gold.jpg)');
+    }
+}
+</script>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
 			<div class='header-img-wrap'>
 				<a href='/' title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing'>
-					<?php /* -- HOME PAGE -- */ 
-					 if( is_front_page() ) : ?>
-					 	<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-gold.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
- 					<?php endif; ?>		
-					<?php /* -- ABOUT PAGE -- */ 
-					 if( is_page( 35 ) ) : ?>
-					 <img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-maroon.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
-					<?php endif; ?>
-					<?php /* -- CIENTS PAGE -- */ 
-					 if( is_page( 36 ) ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-salmon.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
-					<?php endif; ?>
-					<?php /* -- SERVICES PAGE -- */ 
-					 if( is_page( 37 ) ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-pink.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
-					<?php endif; ?>
-					<?php /* -- PARTNERS PAGE -- */ 
-					 if( is_page( 38 ) ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-peach.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
-					<?php endif; ?>
-					<?php /* -- BLOG PAGE -- */ 
-					 if( is_home() ) : ?>
-						<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-blue.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
-					<?php endif; ?>
-				</a>
+					<img src="<?php echo get_stylesheet_directory_uri();?>/img/stamats-health-care-marketing-square-gold.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
+ 				</a>
 			</div>
 			<h1 class="site-title hide-me"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</hgroup>

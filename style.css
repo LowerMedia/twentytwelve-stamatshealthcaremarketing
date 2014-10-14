@@ -15,14 +15,21 @@
 
 /* -- BACKGROUND IMAGE STYLES -- */
 
-	body {background-color: #B7A84D;/*gold*/}
+	body {background-color: #776D32;/*gold*/}
+	body.home {background-color: #B7A84D;/*gold*/}
+
 	/*.page-id-35 {background-color: #712040;maroon}
 	.page-id-36 {background-color: #C87476;pink}
 	.page-id-37 {background-color: #AE554F;red}
 	.page-id-38 {background-color: #D2A472;salmon}
 	.blog {background-color: #00739F;blue}*/
 
-	.site {
+	.bkImgHold {background-image: url('img/background-gold.jpg');}
+
+	.site::after {
+		content:"";
+		opacity: .5;
+
 		background-color: transparent;
 		background-image: url('img/background-gold.jpg');
 		background-attachment: fixed;
@@ -34,7 +41,18 @@
 		/* -webkit-background-size: contain; */
 		-moz-background-size: contain;
 		-o-background-size: contain;
+
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: fixed;
+		z-index: -1;
+
+		height:100%;
 	}
+
+	.home .site::after {opacity: .8;}
 
 	/*.page-id-35 .site { 
 		height:100vh;
@@ -97,6 +115,7 @@
 	body .site {
 		margin:0 auto;
 		box-shadow: none;
+		background-color: transparent;
 	}
 
 	@media screen and (min-height: 769px) {
@@ -214,6 +233,8 @@
 	.main-navigation ul.nav-menu {
 		margin-top:5vh;
 		text-align: center;
+		white-space: nowrap;
+		width:92%;
 	}
 
 	.main-navigation li {
@@ -239,19 +260,50 @@
 	}
 
 /* -- CONTENT -- */
-	
+
 	.site-content .hentry,
 	.site-content .not-found {
 		margin: 0 auto;
-		width: 50%;
+		width: 80%;
 		text-align: center;
 	}
+
+	.page-id-36 .site-content .hentry,
+	.page-id-37 .site-content .hentry,
+	.page-id-38 .site-content .hentry {text-align:left;}
 
 	@media screen and (max-width: 600px) {
 		.site-content .hentry,
 		.site-content .not-found {width: 80%;}
 	}
 
+	.content-column {
+		float: left;
+		width:45%;
+	}
+
+	/* PARTNERS */
+	.page-id-38 .site-content .hentry {
+		width:30%;
+		text-align: justify;
+	}
+	.page-id-38 .site-content .img {background:white;}
+
+	.wp-image-66 {
+		background: white;
+		padding: 10px 0;
+	}
+
+	/* SERVICES */
+	.page-id-37 .site-content h3 {margin-top:5rem;}
+
+	/* CLIENTS */
+	.page-id-36 .site-content .hentry {margin-left:22%;}
+	.page-id-36 .content-column {
+		width:40%;
+	}
+
+	
 
 /* -- FOOTER -- */
 
