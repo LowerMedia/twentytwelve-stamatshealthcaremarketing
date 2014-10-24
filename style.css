@@ -335,3 +335,10 @@
 	.menu-item-101 {
 		background-image:url('img/square-linkedin-128.png');
 	}
+
+/* -- Media Queries -- */
+
+	@media only screen and (max-width : 600px) {
+		.page-id-36 .site-content .hentry {margin:0 auto;}
+		.entry-content .content-column {width:100%;text-align: center;}
+		.page-id-38 .site-content .hentry {width: 100%;}
