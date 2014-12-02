@@ -15,12 +15,18 @@
 
 /* -- BACKGROUND IMAGE STYLES -- */
 
-	body {background-color: #776D32;/*gold*/}
-	body.home {background-color: #B7A84D;/*gold*/}
+	body { background-color: #776D32; /* DARKGOLD */ }
+	
+	body.home { background-color: #B7A84D; /* GOLD */ }
 
 	.site::after {
-		content:"";
-		opacity: .5;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		height:100%;
 		background-color: transparent;
 		background-image: url('img/optimized-maximum-1498-1000-background-gold.jpg');
 		background-attachment: fixed;
@@ -29,34 +35,23 @@
 		background-origin: padding-box;
 		background-size: auto 100vh;
 		background-repeat:no-repeat;
+		content:"";
+		opacity: .5;
 		/* -webkit-background-size: contain; */
 		-moz-background-size: contain;
 		-o-background-size: contain;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		position: fixed;
-		z-index: -1;
-		height:100%;
 	}
 
 	.home .site::after { opacity: .8; }
 
 	/*APPLIES WHEN BROWSER IS TALLER THAN VALUE*/
-	@media screen and (min-height: 900px) {
-		.home .site {height:100vh;}
-	}
+	@media screen and (min-height: 900px) { .home .site { height:100vh; } }
 
 	@media screen and (max-height: 766.1875px) {
 		.site,
-		.page .site {
-			height: 100%;
-		}
+		.page .site { height: 100%; }
 
-		.blog .site {
-			height: 100vh;
-		}
+		.blog .site { height: 100vh; }
 	}
 
 	@media screen and (max-width: 600px) {
@@ -69,30 +64,22 @@
 		.page-id-36 .site,
 		.page-id-37 .site,
 		.page-id-38 .site,
-		.blog .site {
-			height:100%;
-		}
+		.blog .site { height:100%; }
 	}
 
 /* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
 
 	body .site {
 		margin:0 auto;
-		box-shadow: none;
 		background-color: transparent;
+		box-shadow: none;
 	}
 
-	@media screen and (min-height: 769px) {
-	.home .site {height:100vh;}
-	}
+	@media screen and (min-height: 769px) { .home .site { height:100vh; } }
 
-	.home .wrapper {
-		margin-top:20.8vh;
-	}
+	.home .wrapper { margin-top:20.8vh; }
 
-	@media screen and (max-width: 600px) {
-		.home .wrapper {margin-top: 0;}
-	}
+	@media screen and (max-width: 600px) { .home .wrapper {margin-top: 0;} }
 
 	/*REMOVE BORDERS*/
 	.site-content article, 
@@ -108,10 +95,7 @@
 	    left: -9999px;
 	}
 
-	.site-phonenumber {
-		font-size:2.5em;
-	}
-
+	.site-phonenumber { font-size:2.5em; }
 
 /* -- TEXT STYLES -- */
 
@@ -130,33 +114,28 @@
 	}
 	/* Color Visited Links From Grey To WhiteSmoke */
 	.entry-content a:visited, 
-	.comment-content a:visited {
-		color:whitesmoke;
-	}
-
+	.comment-content a:visited { color:whitesmoke; }
 
 /* -- HEADER -- */
 
+	.site-header { padding:0; }
 
-	.site-header {
-		padding:0;
-	}
-
-	.site-header .header-image {
-		box-shadow: none;
-	}
+	.site-header .header-image { box-shadow: none; }
 
 	hgroup {
 		float:left;
 		width:100%;
 	}
 
-	.home .site-header {margin-bottom: 25.9vh;}
+	.home .site-header { margin-bottom: 25.9vh; }
 	
 	@media screen and (max-width: 600px) {
-		hgroup {margin-bottom:30px;}
-		.home .site-description {margin-bottom:30px;}
-		.home .site-header {margin-bottom: 0;}
+
+		hgroup { margin-bottom:30px; }
+
+		.home .site-description { margin-bottom:30px; }
+
+		.home .site-header { margin-bottom: 0; }
 	}
 
 	.header-img-wrap {
@@ -184,9 +163,7 @@
 
 	@media screen and (min-width: 600px) {
 		.main-navigation ul.nav-menu, 
-		.main-navigation div.nav-menu > ul {
-			border:none;
-		}
+		.main-navigation div.nav-menu > ul { border:none; }
 	}
 
 	.main-navigation {
@@ -196,14 +173,12 @@
 
 	.main-navigation ul.nav-menu {
 		margin-top:5vh;
+		width:92%;
 		text-align: center;
 		white-space: nowrap;
-		width:92%;
 	}
 
-	.main-navigation li {
-		margin:0 8px;
-	}
+	.main-navigation li { margin:0 8px; }
 
 	.main-navigation li a {
 		padding:0 10px;
@@ -234,7 +209,7 @@
 
 	.page-id-36 .site-content .hentry,
 	.page-id-37 .site-content .hentry,
-	.page-id-38 .site-content .hentry {text-align:left;}
+	.page-id-38 .site-content .hentry { text-align:left; }
 
 	@media screen and (max-width: 600px) {
 		.site-content .hentry,
@@ -247,45 +222,47 @@
 	}
 
 	/* PARTNERS */
-	.page-id-38 .site-content .hentry {
-		width:30%;
-		text-align: justify;
-	}
-	.page-id-38 .site-content .img {background:white;}
 
-	.wp-image-66 {
-		background: white;
-		padding: 10px 0;
-	}
+		.page-id-38 .site-content .hentry {
+			width:30%;
+			text-align: justify;
+		}
+
+		.page-id-38 .site-content .img { background:white; }
+
+		.wp-image-66 {
+			padding: 10px 0;
+			background: white;
+		}
 
 	/* SERVICES */
-	.page-id-37 .site-content h3 {margin-top:5rem;}
+
+		.page-id-37 .site-content h3 { margin-top:5rem; }
 
 	/* CLIENTS */
-	.page-id-36 .site-content .hentry {margin-left:22%;}
-	.page-id-36 .content-column {
-		width:40%;
-	}
+
+		.page-id-36 .site-content .hentry { margin-left:22%; }
+
+		.page-id-36 .content-column { width:40%; }
 
 /* -- FOOTER -- */
 
 	footer[role="contentinfo"] {margin:0 auto;text-align:center;}
 
 	.menu-social-media-container .menu-item {
-		height: 64px;
-		width: 64px;
 		display: inline-block;
-		color: transparent;
-		border-radius: 5px;
-		background-repeat: no-repeat;
 		margin:0 1%;
+		width: 64px;
+		height: 64px;
+		border-radius: 5px;
 		background-image: url('img/social-media-sprite-facebook-twitter.png');
 		background-size: 128px;
+		background-repeat: no-repeat;
+		color: transparent;
 	}
 
 	.menu-social-media-container .menu-item a,
-	.menu-social-media-container .menu-item a:hover {color:transparent;}
-
+	.menu-social-media-container .menu-item a:hover { color:transparent; }
 
 	.menu-social-media-container .menu-item-100 { background-position: 100% 0; }
 
