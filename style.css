@@ -18,20 +18,10 @@
 	body {background-color: #776D32;/*gold*/}
 	body.home {background-color: #B7A84D;/*gold*/}
 
-	/*.page-id-35 {background-color: #712040;maroon}
-	.page-id-36 {background-color: #C87476;pink}
-	.page-id-37 {background-color: #AE554F;red}
-	.page-id-38 {background-color: #D2A472;salmon}
-	.blog {background-color: #00739F;blue}*/
-
-	.bkImgHold {background-image: url('img/background-gold.jpg');}
-
 	.site::after {
 		content:"";
 		opacity: .5;
-
 		background-color: transparent;
-		/*background-image: url('img/background-gold.jpg');*/
 		background-image: url('img/optimized-maximum-1498-1000-background-gold.jpg');
 		background-attachment: fixed;
 		background-position:center center;
@@ -42,41 +32,16 @@
 		/* -webkit-background-size: contain; */
 		-moz-background-size: contain;
 		-o-background-size: contain;
-
 		top: 0;
 		left: 0;
 		bottom: 0;
 		right: 0;
 		position: fixed;
 		z-index: -1;
-
 		height:100%;
 	}
 
-	.home .site::after {opacity: .8;}
-
-	/*.page-id-35 .site { 
-		height:100vh;
-		background-image: url('img/background-maroon.jpg');
-	}
-
-	.page-id-36 .site {
-		background-image: url('img/background-salmon.jpg'); 
-	}
-		
-	.page-id-37 .site {
-		background-image: url('img/background-pink.jpg'); 
-	}
-		
-	.page-id-38 .site {
-		background-image: url('img/background-peach.jpg'); 
-	}
-		
-	.blog .site { 
-		height:100vh;
-		background-image: url('img/background-blue.jpg');
-	}*/
-		
+	.home .site::after { opacity: .8; }
 
 	/*APPLIES WHEN BROWSER IS TALLER THAN VALUE*/
 	@media screen and (min-height: 900px) {
@@ -110,8 +75,6 @@
 	}
 
 /* -- GLOBAL (HTML/BODY/P/UL/LI) -- */
-
-	
 
 	body .site {
 		margin:0 auto;
@@ -304,8 +267,6 @@
 		width:40%;
 	}
 
-	
-
 /* -- FOOTER -- */
 
 	footer[role="contentinfo"] {margin:0 auto;text-align:center;}
@@ -336,3 +297,37 @@
 		.page-id-36 .site-content .hentry {margin:0 auto;}
 		.entry-content .content-column {width:100%;text-align: center;}
 		.page-id-38 .site-content .hentry {width: 100%;}
+
+
+
+
+
+	/*.page-id-35 {background-color: #712040;maroon}
+	.page-id-36 {background-color: #C87476;pink}
+	.page-id-37 {background-color: #AE554F;red}
+	.page-id-38 {background-color: #D2A472;salmon}
+	.blog {background-color: #00739F;blue}*/
+
+	/*.bkImgHold {background-image: url('img/background-gold.jpg');}*/
+
+	/*.page-id-35 .site { 
+		height:100vh;
+		background-image: url('img/background-maroon.jpg');
+	}
+
+	.page-id-36 .site {
+		background-image: url('img/background-salmon.jpg'); 
+	}
+		
+	.page-id-37 .site {
+		background-image: url('img/background-pink.jpg'); 
+	}
+		
+	.page-id-38 .site {
+		background-image: url('img/background-peach.jpg'); 
+	}
+		
+	.blog .site { 
+		height:100vh;
+		background-image: url('img/background-blue.jpg');
+	}*/
