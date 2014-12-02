@@ -36,16 +36,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<script type="text/javascript">
-document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
-    if(document.readyState=='loaded' || document.readyState=='complete') {
-    	//var theCSSprop = window.getComputedStyle(document.getElementById("bkImgHold"),':after').getPropertyValue("background-image");
-        //alert('Page is fully loaded.'+theCSSprop);
-        //document.getElementById("page").setProperty("background-color", 'blue')
-        //jQuery('.site::after').css('background-image', 'url(http://stamatshealthcaremarketing.petelower.com/wp-content/themes/twentytwelve-stamatshealthcaremarketing/img/background-gold.jpg)');
-    }
-}
-</script>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
