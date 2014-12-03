@@ -50,6 +50,23 @@ img[data-unveil="true"] { opacity: 0; -webkit-transition: opacity .3s ease-in; -
 		-o-background-size: contain;
 	}
 
+	    /* fix for the ipad */
+@media (min-device-width : 768px) and (max-device-width : 1024px)  { 
+    .site::after {
+        background-attachment: scroll;
+        /* default height landscape*/
+        height: 768px;
+    }
+
+}
+/* fix for the ipad */
+@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+    .site::after {
+        /* default height landscape*/
+        height: 1024px;
+    }
+} 
+
 	.home .site::after { opacity: .8; }
 
 	/*APPLIES WHEN BROWSER IS TALLER THAN VALUE*/
@@ -87,7 +104,9 @@ img[data-unveil="true"] { opacity: 0; -webkit-transition: opacity .3s ease-in; -
 
 	@media screen and (min-height: 769px) { .home .site { height:100vh; } }
 
-	.home .wrapper { margin-top:20.8vh; }
+	.home .wrapper { margin-top:15.8vh; }
+
+	@media screen and (max-width: 1024px) { .home .wrapper { margin-top:8.8vh; } }
 
 	@media screen and (max-width: 600px) { .home .wrapper {margin-top: 0;} }
 
@@ -178,12 +197,12 @@ img[data-unveil="true"] { opacity: 0; -webkit-transition: opacity .3s ease-in; -
 
 	.main-navigation {
 		margin: 0 auto 0 auto;
-		width: 50%;
+		width: 100%;
 	}
 
 	.main-navigation ul.nav-menu {
-		margin-top:5vh;
-		width:92%;
+		margin: 5vh auto 0 auto;
+		width:440px;
 		text-align: center;
 		white-space: nowrap;
 	}

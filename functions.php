@@ -105,6 +105,10 @@ function lowermedia_jquery_enqueue() {
     wp_deregister_script('jquery');
     wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null, true);
     wp_enqueue_script('jquery');
+    if(wp_is_mobile()) {
+      wp_register_script('backstretch', "http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js", false, null, true);
+      wp_enqueue_script('backstretch');
+    }
 }
 
 //added lazy load styles to style.css so deregister
@@ -112,3 +116,19 @@ add_action( 'wp_print_styles', 'lowermedia_deregister_styles', 100 );
 function lowermedia_deregister_styles() {
   wp_deregister_style( 'image-lazy-load-frontend' );
 }
+
+/*
+#
+#   SPEED OPTIMIZATIONS
+#   -Load all fonts from google
+#
+#
+*/
+
+    // function load_fonts() {
+    //     wp_dequeue_style( 'twentytwelve-fonts' );
+    //     wp_deregister_style( 'twentytwelve-fonts' );
+    //     wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext');
+    //     wp_enqueue_style( 'googleFonts');
+    // }
+    // add_action('wp_print_styles', 'load_fonts');
