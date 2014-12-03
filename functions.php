@@ -1,20 +1,14 @@
 <?php
 /*
 #
-#   REGISTER PARENT CSS
+#   REGISTER NAV MENU
 #
 */
-
-function lowermedia_enqueue_parent_style() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-}
-add_action( 'wp_enqueue_scripts', 'lowermedia_enqueue_parent_style' );
 
 function lowermedia_register_my_menu() {
   register_nav_menu('footer-social-menu',__( 'Footer Social Menu' ));
 }
 add_action( 'init', 'lowermedia_register_my_menu' );
-
 
 /*
 #
@@ -94,21 +88,27 @@ function custom_admin_logo() {
 add_action('admin_head', 'custom_admin_logo');
 
 /*
-# Remove jquery migrate as is not needed
+# SPEED OPTIMIZATIONS
+# 
 */
 
-add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
-
+// Remove jquery migrate as is not needed
+if(!is_admin()) add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
 function dequeue_jquery_migrate( &$scripts){
-  if(!is_admin()){
     $scripts->remove( 'jquery');
     $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
-  }
 }
 
+//load jquery from google
 if (!is_admin()) add_action("wp_enqueue_scripts", "lowermedia_jquery_enqueue", 11);
 function lowermedia_jquery_enqueue() {
-   wp_deregister_script('jquery');
-   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null, true);
-   wp_enqueue_script('jquery');
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null, true);
+    wp_enqueue_script('jquery');
+}
+
+//added lazy load styles to style.css so deregister
+add_action( 'wp_print_styles', 'lowermedia_deregister_styles', 100 );
+function lowermedia_deregister_styles() {
+  wp_deregister_style( 'image-lazy-load-frontend' );
 }
