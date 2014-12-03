@@ -92,3 +92,23 @@ function custom_admin_logo() {
     ';
 }
 add_action('admin_head', 'custom_admin_logo');
+
+/*
+# Remove jquery migrate as is not needed
+*/
+
+add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
+
+function dequeue_jquery_migrate( &$scripts){
+  if(!is_admin()){
+    $scripts->remove( 'jquery');
+    $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
+  }
+}
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "lowermedia_jquery_enqueue", 11);
+function lowermedia_jquery_enqueue() {
+   wp_deregister_script('jquery');
+   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null, true);
+   wp_enqueue_script('jquery');
+}
