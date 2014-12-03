@@ -21,14 +21,6 @@
 		</footer><!-- #colophon -->
 	</div><!-- #main .wrapper -->
 </div><!-- #page -->
-<?php wp_footer(); 
-
-/*
-
-<?php do_action( 'twentytwelve_credits' ); ?>
-		<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentytwelve' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentytwelve' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentytwelve' ), 'WordPress' ); ?></a>
-
-*/
-?>
+<?php wp_footer(); ?>
 </body>
 </html>
