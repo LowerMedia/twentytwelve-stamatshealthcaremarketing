@@ -38,7 +38,7 @@
 		<hgroup>
 			<div class='header-img-wrap'>
 				<a href='/' title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing'>
-					<img height='135' width='135' src="<?php echo get_stylesheet_directory_uri();?>/img/optimized-135x135-stamats-health-care-marketing-square-gold.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
+					<img height='135' width='135' src="<?php echo get_stylesheet_directory_uri();?>/img/optimized-high-135x135-stamats-health-care-marketing-square-gold.png" id="header-image" class="header-image" title='Stamats Health Care Marketing' alt='Stamats Health Care Marketing' />
  				</a>
 			</div>
 			<h1 class="site-title hide-me"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
