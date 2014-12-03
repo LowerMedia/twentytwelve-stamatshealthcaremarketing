@@ -35,21 +35,20 @@ img[data-unveil="true"] { opacity: 0; -webkit-transition: opacity .3s ease-in; -
 		left: 0;
 		z-index: -1;
 		height:100%;
-		content:"";
-		opacity: .5;
-
-		background: transparent url('img/optimized-high-1498-1000-background-gold.jpg') no-repeat scroll top center;
-		/*background-attachment: fixed;*/
+		background-color: transparent;
+		background-image: url('img/optimized-high-1498-1000-background-gold.jpg');
+		background-attachment: fixed;
+		background-position:top center;
 		background-clip: border-box;
 		background-origin: padding-box;
-
 		background-size: auto 100vh;
-		-webkit-background-size: cover; 
+		background-repeat:no-repeat;
+		content:"";
+		opacity: .5;
+		/* -webkit-background-size: contain; */
 		-moz-background-size: contain;
 		-o-background-size: contain;
 	}
-
-	@media only screen and (max-device-width : 1024px)  { .site::after {  } }
 
 	.home .site::after { opacity: .8; }
 
@@ -83,6 +82,8 @@ img[data-unveil="true"] { opacity: 0; -webkit-transition: opacity .3s ease-in; -
 		background-color: transparent;
 		box-shadow: none;
 	}
+
+	h2 { margin: 10vh 0 0 0; }
 
 	@media screen and (min-height: 769px) { .home .site { height:100vh; } }
 
